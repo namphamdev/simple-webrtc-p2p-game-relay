@@ -29,8 +29,8 @@ export class RelayServer {
     clients: RelayClient[] = [];
     /** A map from client username to server - for easy lookup */
     clientsByName: Record<string, RelayClient> = {};
-    /** The port number we're running on - 8080 because thats the default expectation on nodejs AWS beanstalk */
-    port: number = 8080;
+    /** The port number we're running on - 3000 because thats the default expectation on nodejs AWS beanstalk */
+    port: number = 3000;
 
     constructor() {
         console.log("Starting Relay Server");
